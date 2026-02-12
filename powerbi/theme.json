@@ -1,0 +1,7 @@
+{
+  "name": "Churn Analytics Theme",
+  "dataColors": ["#1D3557", "#457B9D", "#2A9D8F", "#E76F51", "#F4A261"],
+  "background": "#FFFFFF",
+  "foreground": "#1D3557",
+  "tableAccent": "#2A9D8F"
+}
