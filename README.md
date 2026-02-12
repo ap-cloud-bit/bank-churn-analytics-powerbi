@@ -1,195 +1,61 @@
 <p align="center">
-  images/banner.png
-</p>
+  <img src="images/banner.png" width="100%" alt="Bank CustomerL & Power BI
 
-!Status
-!Python
-!Power BI
-![License](https://img.shields.io/badge/License-M
-
-\# Bank Customer Churn — Analytics, Machine Learning \& Power BI Dashboard
-
-
-
-!Python
-
-!Power BI
-
-!License
-
-
-
-A complete end-to-end \*\*Bank Customer Churn Analysis\*\* using \*\*Python (Kaggle)\*\* for data preparation, modeling, segmentation and \*\*Power BI\*\* for a business-ready interactive dashboard.
-
-
-
-This project demonstrates real-world skills in:
-
-\- Data cleaning \& feature engineering  
-
-\- Exploratory Data Analysis (EDA)  
-
-\- Predictive modeling (Logistic Regression, Random Forest)  
-
-\- K-Means customer segmentation  
-
-\- Power BI dashboarding \& storytelling  
-
-\- Model evaluation (Confusion Matrix, F1, Recall, Probability Histogram)
-
-
+[![Status](https://img.shields.io/badge/o/badge/Pythondge/PowerBI-Dashboard-F2C811?logo00 customers).  
+Built with **Python** (Kaggle/Jupyter) for data prep, modeling & segmentation; and **Power BI** for an executive, multi‑page dashboard.
 
 ---
 
+## 🔎 Highlights
 
+- **Overall churn ≈ 20%**; **Germany** has the highest rate (~32%).  
+- Key drivers: **NumOfProducts, Age, IsActiveMember, Geography (Germany), Balance**.  
+- **K‑Means** segmentation: high‑balance inactive cohort shows the highest churn.  
+- Model tuned for **recall‑first** retention scenario (see `model_summary.csv`).
 
-\## 📊 Dashboard Preview
-
-
-
-\### Overview  
-
-!Overview
-
-
-
-\### Drivers  
-
-!Drivers
-
-
-
-\### Geography Insights  
-
-!Geography
-
-
-
-\### Segments  
-
-!Segments
-
-
-
-\### Model Outputs  
-
-!Model Outputs
-
-
+> See **docs/findings_summary.md** for the brief narrative and **project_brief_fixed.pdf** in Releases.
 
 ---
 
+## 🧭 Quick Navigation
 
-
-\## 💡 Key Insights
-
-
-
-\- \*\*Churn Rate:\*\* ~20.4%  
-
-\- \*\*Highest Churn Geography:\*\* Germany (~32%)  
-
-\- \*\*Top Churn Drivers:\*\*  
-
-&nbsp; - NumOfProducts  
-
-&nbsp; - Age  
-
-&nbsp; - IsActiveMember  
-
-&nbsp; - Living in Germany  
-
-&nbsp; - Balance-to-Salary ratio  
-
-
-
-\- \*\*Customer Segments Identified:\*\*
-
-&nbsp; - High Balance / Inactive — \*highest churn (~32%)\*  
-
-&nbsp; - Low Balance / Multi‑Product  
-
-&nbsp; - Young / High Products  
-
-&nbsp; - Middle-Age / Active  
-
-
+- **Findings summary:** [`docs/findingssummary.md`  
+- **Notebooks:** [`/notebooks` 
+- **Power BI (.pbix):** [`/powerbi/Bank_Churn_Dashboard.pbix`](powerbi/Bank_Churn_Dashboard.pbixxports used by PBIX:** [`powerbi/exports`  
+- **Project license:** `LICENSE`
 
 ---
 
+## 📊 Dashboard Pages (Power BI)
 
+- **Overview:** KPIs + churn by geography, age.  
+- **Drivers:** Feature importance, products, activity, balance‑to‑salary bands.  
+- **Geography Insights:** Churn vs Tenure by country; compact KPI matrix.  
+- **Segments:** Cluster sizes + profile table (medians, %active, %card).  
+- **Model Outputs:** Churn probability histogram, confusion matrix, customer‑level predictions.
 
-\## 🤖 Model Performance
+Screenshots:
 
-
-
-| Metric     | Score |
-
-|------------|--------|
-
-| Accuracy   | 0.65 |
-
-| Precision  | 0.65 |
-
-| Recall     | \*\*1.00\*\* |
-
-| F1 Score   | 0.78 |
-
-
-
-The threshold is tuned for \*\*recall-first\*\*, ideal for customer retention scenarios.
-
-
+| Overview | Drivers |
+|---------|---------|
+| images/overview.png | <img src="images/drivers.png" width="420ents | Model Outputs |
+|-----------|----------|---------------|
+| images/geography.png | <img src="images/segments.png"="imagesputs.png |
 
 ---
 
+## 🧮 Modeling
 
-
-\## 📂 Repository Structure
-
-
-
-notebooks/      → Python notebooks for cleaning, EDA, ML \& segmentation
-
-powerbi/        → Power BI .pbix + data exports
-
-data/           → Data dictionary / sample data
-
-images/         → Dashboard screenshots
-
-docs/           → Summary / optional PDF
+- **Prep/Features:** standardize `Geography`; derive `AgeBucket`, `TenureBucket`, `BalanceToSalary`.  
+- **Models:** Logistic Regression, Random Forest, Gradient Boosting; class‑weighting; threshold tuning for **recall**.  
+- **Explainability:** permutation + tree importances → exported to `feature_importance.csv`.  
+- **Segmentation:** K‑Means (K=4) on standardized behavior/demographics.
 
 ---
 
-
-
-\## 🛠 Tech Stack
-
-
-
-\- \*\*Python:\*\* pandas, numpy, seaborn, scikit-learn  
-
-\- \*\*Kaggle Notebooks\*\*  
-
-\- \*\*Power BI:\*\* DAX, Power Query, Visualizations  
-
-\- \*\*GitHub:\*\* Documentation \& version control  
-
-
-
----
-
-
-
-\## 🚀 How to Reproduce
-
-
-
-\### Clone Repo
+## 🚀 Reproduce Locally
 
 ```bash
-
 git clone https://github.com/ap-cloud-bit/bank-churn-analytics-powerbi.git
-
 cd bank-churn-analytics-powerbi
-
+pip install -r requirements.txt
