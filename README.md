@@ -1,10 +1,12 @@
+<p align="center">
+  images/banner.png
+</p>
+
 !Status
 !Python
 !Power BI
 ![License](https://img.shields.io/badge/License-M
-<p align="center">
-  images/banner.png
-</p>
+
 \# Bank Customer Churn — Analytics, Machine Learning \& Power BI Dashboard
 
 
