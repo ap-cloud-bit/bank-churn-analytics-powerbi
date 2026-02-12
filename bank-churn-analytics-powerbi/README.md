@@ -1,3 +1,11 @@
+!Status
+!Python
+!Power BI
+![License](https://img.shields.io/badge/License-M
+<p align="center">
+  images/banner.png
+</p>
+
 \# Bank Customer Churn — Analytics, Machine Learning \& Power BI Dashboard
 
 
@@ -183,4 +191,5 @@ docs/           → Summary / optional PDF
 git clone https://github.com/ap-cloud-bit/bank-churn-analytics-powerbi.git
 
 cd bank-churn-analytics-powerbi
+
 
