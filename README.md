@@ -1,3 +1,6 @@
+<p align="center">
+  images/banner.png
+</p>
 \# Bank Customer Churn — Analytics, Machine Learning \& Power BI Dashboard
 
 
