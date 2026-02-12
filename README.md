@@ -1,83 +1,81 @@
-<p align="center">
-  images/banner_1600x800.png
+images/banner_1600x800.png
 </p>
 
 <div align="center">
 
-!Status
-!Python
-![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-F2C811?ields--
+![Status
+![Python](https://img.shields.io/badge/Python-3.10+-blue?it](httpsize
+
+</div>
+
+---
 
 # 📊 Bank Customer Churn — Analytics, ML & Power BI
 
 End‑to‑end churn analysis for a European bank (10,000 customers).  
-Built with **Python** for data preparation, EDA, ML modeling & segmentation, and **Power BI** for a production‑ready dashboard.
+Built using **Python** (EDA, ML pipeline, segmentation) and **Power BI** (5‑page dashboard).
 
 ---
 
-## 🔎 Highlights
+## 🔍 Highlights
 
-- **Overall churn ≈ 20%**; **Germany** has the highest rate (~32%).
-- Key drivers: **NumOfProducts**, **Age**, **IsActiveMember**, **Geography (Germany)**, **Balance**.
-- **K‑Means segmentation** discovered a high‑balance, inactive cluster with the highest churn.
-- ML model tuned for **recall-first** to ensure capturing all churners.
-- Full pipeline from **EDA → Feature Engineering → Modeling → Segmentation → Dashboarding**.
+- **Overall churn ≈ 20%; Germany shows the highest (~32%)**
+- Key drivers: **NumOfProducts, Age, IsActiveMember, Germany, Balance**
+- **K‑Means segmentation** identified high‑balance inactive cluster (highest churn)
+- ML model optimized for **recall‑first** retention strategy
 
-> Full findings:  
-> 📄 [`docsfindings_summary.md`  
-> 📘 PDF brief available in Releases
+📄 **Findings summary:**  
+➡️ [`docs/findings_summary.md`](docs*PDF Brief:** Included in Releases
 
 ---
 
 ## 🧭 Quick Navigation
 
-- 📘 Findings: `docs/findings_summary.md`  
-- 📓 Notebooks: [`/notebooks`](not� PBIX File: [`/powerbi/Bank_Churn_Dashboard.pbix`](powerbi/Bank_Churn_Dashboard.pb`/powerbi/exports`  
-- ⚖️ License: `LICENSE`
+- 📘 Findings → [`cs/findings_summary.md`  
+- 📓 Notebooks → [`/notebooks`  
+- 📊 Power BI →/powerbi/Bank_Churn_Project.pbix`  
+- 📁 PBIX Data Sources → [`/powerbi/exports`  
+- ⚖ License → [`LICENSE`
 
 ---
 
-## 📊 Power BI Dashboard (Screenshots)
+## 📊 Dashboard Pages (Screenshots)
 
-### **Overview vs Drivers**
-
+### Overview vs Drivers
 | Overview | Drivers |
 |---------|---------|
-| <img src="rview.png | images/drivers.png |
+| images/overview.png | images/drivers.png |
 
-### **Geography vs Segments vs Model Outputs**
-
+### Geography vs Segments vs Model Outputs
 | Geography | Segments | Model Outputs |
 |-----------|----------|---------------|
-| images/geography.png | <img srcegments.png | images/model_outputs.png |
+| <img src="images/geography.png" width="png | images/model_outputs.png |
 
 ---
 
 ## 🧮 Modeling Details
 
 ### **Feature Engineering**
-- Created `AgeBucket`, `TenureBucket`, `BalanceToSalary`
-- Standardized `Geography`
-- Outlier handling & clipping on selected numeric fields
+- Created: `AgeBucket`, `TenureBucket`, `BalanceToSalary`
+- Standardized: `Geography`
+- Outlier clipping for stability
 
-### **Machine Learning Models**
+### **Models Used**
 - Logistic Regression  
 - Random Forest  
 - Gradient Boosting  
 
-Class imbalance handled via `class_weight="balanced"`.
+Class imbalance handled via *class_weight="balanced"*.
 
-### **Model Metrics** (See `model_summary.csv`)
-- **Accuracy:** 0.65  
-- **Precision:** 0.65  
-- **Recall:** **1.00**  
-- **F1:** 0.78  
-- Business strategy: *Recall-first* (don’t miss churners)
+### **Performance (see `model_summary.csv`)**
+- Accuracy: **0.65**
+- Precision: **0.65**
+- Recall: **1.00**
+- F1: **0.78**
 
 ### **Segmentation**
 - K‑Means (4 clusters)
-- Behavioral + demographic segmentation
-- Exported to Power BI for profiling
+- Behavioral + demographic grouping
 
 ---
 
