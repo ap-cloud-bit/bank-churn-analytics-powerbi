@@ -1,8 +1,11 @@
+[Banner]
 <p align="center">
-  <img src="images/banner.png" width="100%" alt="Bank CustomerL & Power BI
+  images/banner.png
+</p>
 
-[![Status](https://img.shields.io/badge/o/badge/Pythondge/PowerBI-Dashboard-F2C811?logo00 customers).  
-Built with **Python** (Kaggle/Jupyter) for data prep, modeling & segmentation; and **Power BI** for an executive, multi‑page dashboard.
+<div align="center">
+
+![Status](https://Power BI](https://imgtps://img.shhttps://img.shields.io/github/forks/ap-cloud-bit
 
 ---
 
