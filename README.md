@@ -69,3 +69,26 @@ Built using **Python** (EDA, ML pipeline, segmentation) and **Power BI** (5-page
 - Gradient Boosting  
 
 Imbalance handled via:  
+class_weight = "balanced"
+
+### 📈 Performance (see `model_summary.csv`)
+- Accuracy: **0.65**
+- Precision: **0.65**
+- Recall: **1.00**
+- F1 Score: **0.78**
+
+### 👥 Segmentation
+- K-Means (4 clusters)
+- Behavioral + demographic grouping
+- Exported cluster labels for Power BI profiling
+
+---
+
+## 🚀 Reproduce Locally
+
+```bash
+git clone https://github.com/ap-cloud-bit/bank-churn-analytics-powerbi.git
+cd bank-churn-analytics-powerbi
+pip install -r requirements.txt
+
+powerbi/Bank_Churn_Project.pbix
